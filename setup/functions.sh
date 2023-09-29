@@ -241,8 +241,8 @@ function get_os_code {
 	VER=$(lsb_release -rs)
 
 	if [[ $ID == "Debian" ]]; then
-		if [[ $VER == "10" ]]; then
-			echo $OS_DEBIAN_10
+		if [[ $VER == "12" ]]; then
+			echo $OS_DEBIAN_12
 			return 0
 		elif [[ $VER == "11" ]]; then
 			echo $OS_DEBIAN_11
